@@ -14,7 +14,7 @@ const char* password = "";
 
 WiFiClient client;
 
-unsigned long myChannelNumber = "";
+unsigned long myChannelNumber = ;
 const char* myWriteAPIKey = "";
 
 const byte r = 4;
