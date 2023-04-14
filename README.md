@@ -12,3 +12,6 @@ ThingSpeak allows for creating custom analysis snippets in it's own matlab envir
 
 
 The alert is set to recurr every 5 minutes with the help of TimeControl feature in ThingSpeak and it sends an email whenever the smoke level is greater than the threshold limit that we give ourselves.
+
+
+The code is entirely written in visual studio code's "PlatformIO" extension.
