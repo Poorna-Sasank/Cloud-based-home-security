@@ -1,0 +1,22 @@
+channelID = 2098070;
+alertApiKey = 'myalertapikey;
+alertUrl="https://api.thingspeak.com/alerts/send";
+options = weboptions("HeaderFields", ["ThingSpeak-Alerts-API-Key", alertApiKey ]);
+alertSubject = sprintf("Home Security Information");
+
+
+smokedata = thingSpeakRead(channelID,Fields = 4);
+disp("Smoke Data: ");
+disp(smokedata);
+if (smokedata > 230)
+    alertBody = "Smoke Alert";
+else
+    alertBody = "No smoke :)";
+end
+
+ % Catch errors so the MATLAB code does not disable a TimeControl if it fails
+try
+    webwrite(alertUrl , "body", alertBody, "subject", alertSubject, options);
+catch someException
+    fprintf("Failed to send alert: %s\n", someException.message);
+end
