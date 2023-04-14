@@ -17,3 +17,7 @@ The alert is set to recurr every 5 minutes with the help of **TimeControl** feat
 The code is entirely written in visual studio code's "PlatformIO" extension.
 
 **2 ESP32's collect data from their respective sensors and send the data to the same channel to their respective setFields and then the above said analysis can be done :)**
+
+
+![timecontrol](https://user-images.githubusercontent.com/62737084/232129602-9e35cd0e-b6c8-4c3b-9b15-a134a6fc1f24.png)
+![analysis](https://user-images.githubusercontent.com/62737084/232129612-205f8040-62f2-4880-92c1-fedcdd36b33c.png)
