@@ -14,13 +14,13 @@
 #define ledpin2 16
 
 
-const char* ssid = "nice";
-const char* password = "12345678";
+const char* ssid = "";
+const char* password = "";
 
 WiFiClient client;
 
-unsigned long myChannelNumber = 2098070;
-const char* myWriteAPIKey = "8G4FI8U5OAQ6SW1U";
+unsigned long myChannelNumber = ;
+const char* myWriteAPIKey = "";
 const char* server = "api.thingspeak.com";
 
 
